@@ -32,7 +32,7 @@ RUN apk add --no-cache \
 	x265-dev \
 	yasm
 
-RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories && \
+RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
 	apk add --no-cache fdk-aac-dev
 
 RUN mkdir -p /build/aribb24
